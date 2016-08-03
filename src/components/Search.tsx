@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export interface SearchProps { action: any }
-export interface SearchState { value: String, active: Boolean }
+export interface SearchState { value: string, active: boolean }
 
 export class Search extends React.Component<SearchProps, SearchState> {
 
@@ -41,7 +41,7 @@ export class Search extends React.Component<SearchProps, SearchState> {
 
     render() {
 		let clearButton: any;
-		let className: String = 'UISearch';
+		let className: string = 'UISearch';
 		if (this.state.active) {
 			clearButton = <button onClick={this.clearInputValue}>X</button>;
 			className += ' ' + 'active';
