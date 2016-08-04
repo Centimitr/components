@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export interface UserImageProps { name?: string, src?: string ,hue?:number}
+export interface UserImageProps { name?: string, src?: string, hue?: number }
 export interface UserImageState { }
 
 export class UserImage extends React.Component<UserImageProps, UserImageState> {
@@ -36,11 +36,11 @@ export class UserImage extends React.Component<UserImageProps, UserImageState> {
 				className += ' ' + 'small';
 			}
 			// generate color
-			let hue:number; 
-			if(this.props.hue && this.props.hue<=360 && this.props.hue>=0) {
+			let hue: number;
+			if (this.props.hue && this.props.hue <= 360 && this.props.hue >= 0) {
 				hue = this.props.hue;
-			}else{
-				hue = Math.floor(Math.random() * 360);
+			} else {
+				hue = Math.floor(Math.random() * 60) * 6;
 			}
 			imageHTML = <div className={className}
 				title={this.props.name}
