@@ -22,6 +22,7 @@
     cursor: text;
 }
 .UISearch button{
+    margin-top: 1px;
     position: absolute;
     height: 44px;
     width: 44px;

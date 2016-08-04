@@ -23,7 +23,8 @@ export class Tabs extends React.Component<TabsProps, TabsState> {
 		let activeView = children[this.state.activeIndex] || <div></div>;
         return (
 			<div className="UITabs">
-				<div className="tabs">
+				<menu>
+					<div className="tabs">
 					{
 						this.props.titles.map((title: string, index: number) => {
 							let className = "tab";
@@ -34,6 +35,7 @@ export class Tabs extends React.Component<TabsProps, TabsState> {
 						})
 					}
 				</div>
+				</menu>
 				{activeView}
 			</div>
         );
