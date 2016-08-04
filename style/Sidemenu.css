@@ -1,0 +1,10 @@
+.UISidemenu{
+	/*position: fixed;*/
+	/*When needing a parent container*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 66px;
+	background:#3f3f3f;
+}
