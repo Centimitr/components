@@ -5,6 +5,10 @@
     font-family: "Open Sans","Helvetica Neue","Lucida Grande","Segoe UI",Ubuntu,"Droid Sans",sans-serif
 }
 
+li{
+    list-style: none;
+}
+
 input
 {
     border: 1px solid #aaa;
